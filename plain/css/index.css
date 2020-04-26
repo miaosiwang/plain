@@ -1,0 +1,113 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+	width: 320px;
+	height: 568px;
+}
+
+/*首页*/
+.start-bg{
+	width: 100%;
+	height: 100%;
+
+	background:url(../images/startgame.png);
+	/*相对定位*/
+	position: relative;
+
+	/*把元素隐藏掉*/
+	/*display: none;*/
+}
+.btn{
+	width: 160px;
+	height: 40px;
+	background-color: #8f9293;
+	color: white;
+
+	/*字体大小*/
+	font-size: 22px;
+	/*字体左右居中*/
+	text-align: center;
+	/*字体上下居中 行高等于高度*/
+	line-height: 40px; 
+
+	/*下边框 大小 样式 颜色*/
+	border-bottom: 3px solid #6f6f6f;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	/* top: 0; */
+	bottom: 50px;
+
+	margin: auto;
+}
+
+/*鼠标按下*/
+.btn:active{
+	/*把边框隐藏*/
+	border-bottom: none;
+}
+
+
+
+/*游戏页面*/
+.game{
+	/*溢出隐藏元素*/
+	overflow: hidden;
+
+	width: 100%;
+	height: 100%;
+	background:url(../images/bg.jpg) repeat-y center center/100% 100%;
+
+	/*背景偏移 x y*/
+	/*background-position-y: 2px;*/
+
+	/*相对定位*/
+	position: relative;
+
+	/*隐藏游戏页*/
+	display: none;
+}
+/*我方飞机*/
+.myplane{
+	width: 60px;
+	height: 74px;
+
+	/*背景*/
+	background:url(../images/me.gif) no-repeat center center/cover;
+
+	/*绝对定位*/
+	position: absolute;
+	/* calc计算 */
+	left: calc(50% - 60px/2);
+	top: 80%;
+}
+/*透明层*/
+.lir{
+	width: 100%;
+	height: 100%;
+	/*绝对定位*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*层级*/
+	z-index:99; 
+}
+
+
+
+
+
+
+
+
+
+
